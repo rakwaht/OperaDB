@@ -17,4 +17,5 @@ Installation tips
 3. In the file that you just copied there is "index.php". In the first part of the file are defined the parameters needed to connect to the browser: change it with your parameters.
 4. At these point the backend should work. Access one of the desired urls on the port 80
 5. For the frontend copy the folder opera_frontend where you like, go into it and run "npm init" and then "npm start". This should run your development server.
-6. Now access the node server (default port 3000)
+6. Backend and frontend are running on different ports so you should go into opera_frontend/package.json and change the proxy value to your backend ip in orther to avoid CORS problems.
+7. Now access the node server (default port 3000)
